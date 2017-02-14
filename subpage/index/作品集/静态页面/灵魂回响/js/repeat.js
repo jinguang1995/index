@@ -1,0 +1,12 @@
+window.onload=function(){
+	hover('hi1','li');
+	auto('box','btn','wrap');
+	table('btn1','box1','h2');
+	table('btn2','box2','img');
+	hiden('btn3');
+	button('button1','button2','picture');
+	clik('clik1','clik');
+	table('btn4','box4','h2');
+	table('btn5','box5','h2');
+	table('btn6','box6','h2');
+}

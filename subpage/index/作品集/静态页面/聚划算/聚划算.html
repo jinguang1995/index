@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href="base.css" rel="stylesheet"/>
+    <title></title>
+    <style>
+        html{
+            font-size:20px;
+            font-family: "Microsoft YaHei";
+        }
+        .warp{
+            width: 16rem;
+        }
+        .warp header{
+            width: 16rem;
+            height:2.5rem;
+            background:-webkit-linear-gradient(#fff,#ebebeb);
+            position:relative;
+            text-align:center;
+        }
+        header a:first-child{
+            position:absolute;
+            width: 3.25rem;
+            height:1.6rem;
+            background:url("img2/1.png") no-repeat;
+            background-size: 100%;
+            top:0.55rem;
+            left:0.55rem;
+            text-indent:-999em;
+        }
+        header a:last-child{
+            position:absolute;
+            width: 2.45rem;
+            height:1.45rem;
+            background: url("img2/8.png") no-repeat;
+            background-size: 100%;
+            top:0.55rem;
+            right:0.55rem;
+            text-indent:-999em;
+        }
+        header img{
+            width:9.4rem;
+            height:2.2rem ;
+            margin-top:0.2rem;
+        }
+        section{
+            width: 100%;
+        }
+        section .nav{
+            width: 100%;
+            height:2rem;
+            border-bottom: 1px solid #dcdcdc;
+        }
+        .nav li{
+            width: 25%;
+            height:2rem;
+            float:left;
+            line-height: 2rem;
+            text-align:center;
+            font-size:0.5rem;
+            color:#999999;
+            border-right:1px solid #dcdcdc;
+            box-sizing: border-box;
+        }
+        .nav li:last-child{
+            border-right:none;
+        }
+        .nav li a:hover{
+            color:#d51942;
+        }
+        .list{
+            width: 100%;
+            height: 18.5rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+            position: relative;
+        }
+        .list  img{
+            width: 100%;
+            height: 32.125rem;
+            position: absolute;
+            left:0;
+        }
+        .hc{
+            width: 16.5rem;
+            height: 23rem;
+            background:#000;
+            position:absolute;
+            right:-16.5rem;
+            top:0;
+        }
+        .hc dl{
+
+            width: 6.7rem;
+            float:left;
+            font-size:0.6rem;
+        }
+        .hc dl dt{
+            width:5.75rem;
+            color:#fff;
+            height:2.5rem;
+            line-height: 2.5rem;
+            text-align:center;
+            margin:0 0.5rem;
+            box-sizing: border-box;
+        }
+        .hc dl dt:hover{
+            border-bottom:0.1rem solid #fff;
+        }
+        .hc dl dd {
+            color:#aaaaaa;
+            padding-left:1.5rem;
+            line-height:2rem;
+        }
+        .hc dl dd a{
+            color:#fff;
+        }
+        .hc dl dd:hover{
+            color:#fff;
+        }
+
+    </style>
+    <script>
+        ;(function(win,doc){
+            doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            win.addEventListener('resize',function(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            },false)
+        })(window,document);
+        document.addEventListener('DOMContentLoaded',function(){
+            var rem = parseFloat(document.documentElement.style.fontSize);
+            var oWarp=document.querySelector('.warp');
+            var oHc=document.querySelector('.hc');
+            var oFl=document.getElementById('fl');
+            oFl.addEventListener('touchend',function(ev){
+                oHc.style.right='-2rem';
+                oHc.style.WebkitTransition='1s all ease';
+
+                ev.cancelBubble = true
+            },false);
+            oWarp.addEventListener('touchend',function(){
+                oHc.style.right='-16.5rem';
+                oHc.style.WebkitTransition='1s all ease';
+
+            },false);
+
+
+        },false)
+    </script>
+</head>
+<body>
+<div class="warp">
+    <header>
+        <a href="主页.html">返回</a>
+        <img src="img2/2.png"/>
+        <a href="javascript:;" id="fl">分类</a>
+    </header>
+    <section>
+        <ul class="nav">
+            <li><a href="NIKE.html">商品</a></li>
+            <li><a href="杭州生活团.html">生活</a></li>
+            <li><a href="品牌团.html">品牌</a></li>
+            <li><a href="聚宝盆.html">聚宝盆</a></li>
+        </ul>
+        <div class="list">
+            <img src="img2/7.png"/>
+        </div>
+    </section>
+</div>
+<div class="hc">
+    <dl>
+        <dt>分类</dt>
+        <dd>全部</dd>
+        <dd>美食</dd>
+        <dd>休闲</dd>
+        <dd>全部</dd>
+        <dd>美食</dd>
+        <dd>休闲</dd>
+        <dd>全部</dd>
+        <dd>美食</dd>
+        <dd>休闲</dd>
+    </dl>
+    <dl>
+        <dt>地区</dt>
+        <dd><a href="城市.html">切换城市 ></a></dd>
+        <dd>全部</dd>
+        <dd>美食</dd>
+        <dd>休闲</dd>
+        <dd>全部</dd>
+        <dd>美食</dd>
+        <dd>休闲</dd>
+        <dd>全部</dd>
+        <dd>美食</dd>
+        <dd>休闲</dd>
+    </dl>
+
+</div>
+</body>
+</html>

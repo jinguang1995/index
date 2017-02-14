@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3d图片环</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000;}
+        ul{
+            width: 133px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            margin:-100px 0 0  -67px;
+            background: #ccc;
+            transform-style: preserve-3d;
+            transform:perspective(800px) rotateX(-10deg);
+        }
+        ul li{ 
+            list-style: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left:0;
+            top: 0;
+            /*transition: 200ms all ease;*/
+            border-radius: 8px;
+            border:1px solid #fff;
+            background: url("img2/1.jpg") no-repeat;
+            -webkit-box-shadow: 0 0 10px #fff;
+            -webkit-box-reflect: below 10px -webkit-linear-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1));
+        }
+        ul li img{
+            width: 100%;
+        }
+/*
+        ul:active li{
+            transform:rotateY(60deg) translateZ(300px);
+        }
+*/
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            var oUl = document.querySelector('ul');
+            var N = 11;
+            for(var i = 0;i<N;i++){
+                var oLi = document.createElement('li');
+                oLi.style.backgroundImage = 'url("img2/'+(i+1)+'.jpg")';
+                oUl.appendChild(oLi);
+                (function(oLi,i){
+                    setTimeout(function(){
+                        oLi.style.transform = 'rotateY('+i*360/N+'deg) translateZ(300px)';
+                        oLi.style.transition ='1s all ease '+(N-i)*200+'ms';
+                    },0);
+                })(oLi,i);
+            }
+            var aLi = oUl.children;
+            var y = 0;
+            var x = -10;
+            aLi[0].addEventListener('transitionend',function(){
+                change();
+                document.onmousedown = function(ev){
+                    var disX = ev.clientX - y;
+                    var disY = ev.clientY - x;
+                    document.onmousemove = function(ev){
+                        y = ev.clientX - disX;
+                        x = ev.clientY - disY;
+                        change(y/3,x/3);
+                    };
+                    document.onmouseup = function(){
+                        document.onmouseup = null;
+                        document.onmousemove = null;
+                    };
+                    return false;
+                };
+
+
+            },false);
+            function change(y,x) {
+                for(var i = 0;i<aLi.length;i++){
+                    aLi[i].style.transform = 'rotateY('+(i*360/N+y)+'deg) translateZ(300px)';
+                    oUl.style.transform = 'perspective(800px) rotateX('+-x+'deg)';
+                    aLi[i].style.transition ='none';
+                    var scale = Math.abs(Math.abs((i*360/N+y)%360)-180)/180;
+//                    aLi[i].innerHTML =  scale;
+                    scale<0.3&&(scale=0.3);
+                    aLi[i].style.opacity = scale;
+                }
+            }
+            
+            
+        },false);
+    </script>
+</head>
+<body>
+<ul>
+</ul>
+</body>
+</html>

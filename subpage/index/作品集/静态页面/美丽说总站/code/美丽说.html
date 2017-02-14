@@ -1,0 +1,1269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>美丽说</title>
+<style style="text/css">
+	*{
+		margin:0;
+		padding:0;
+		}
+	a{
+		text-decoration:none;
+		}
+	li{
+		list-style:none;
+		}	
+	img{
+		display:block;
+		}	
+	.clearFix:after{
+		content:'';
+		display:block;
+		clear:both;
+		}	
+	.clearFix{
+			zoom:1;
+		}	
+	.wrapper{
+		overflow:hidden;
+		margin:0 auto;
+		width:1200px;
+		}	
+	.head{
+		height:30px;
+		border-bottom:1px solid #eee;
+		}		
+	.head ul{
+		padding-left:342px;
+		}	
+	.head ul li{
+		margin-top:5px;
+		line-height:19px;
+		padding:0 16px 0 16px;
+		border-right:1px dotted #cbcbcb;
+		float:left;
+		font-size:12px;
+		}	
+	.head ul .head-one{
+		padding:0 15px 0 21px;
+		background:url(../images/demo1-1.jpg) no-repeat left center;	
+		
+		}	
+	.head ul .head-two{
+		padding:0 14px 0 41px;
+		background:url(../images/demo1-2.jpg) no-repeat 22px center;
+		}	
+	.head ul .head-three{
+		background:url(../images/demo1-3.jpg) no-repeat 17px center;
+		padding:0 15px 0 42px;
+		}
+	.head ul .head-three div{
+		display:inline-block;
+		margin-left:2px;
+		width:19px;
+		height:13px;
+		background:url(../images/demo1-6.jpg) no-repeat left center;
+		}			
+	.head ul .head-four{
+		background:url(../images/demo1-7.jpg) no-repeat 23px center;
+		padding:0 15px 0 42px;
+		}	
+	.head ul .head-five{
+		padding:0 15px 0 40px;
+		background:url(../images/demo1-4.jpg) no-repeat 18px center;
+		}	
+	.head ul .head-six{
+		padding:0 18px 0 42px;
+		background:url(../images/demo1-8.jpg) no-repeat 25px center;
+		}	
+	.head ul .head-six div{
+		display:inline-block;
+		width:5px;
+		height:12px;
+		background:url(../images/demo1-5.jpg) no-repeat 1px center;}	
+	.head ul .head-seven{
+		padding:0 0 0 18px;
+		border-right:1px solid #fff;
+		}	
+	.head ul li a{
+		color:#7a7a7a;
+		}	
+	.wrapper .top{
+		height:137px;
+		background:url(../images/demo2-3.jpg);
+		}
+	.wrapper .nav{
+		padding-left:21px;
+		height:31px;
+		border-bottom:2px solid #ff679a;
+		}	
+	.wrapper .nav ul li{
+		float:left;
+		font-weight:bold;
+		margin-right:44px;
+		}	
+	.wrapper .nav ul li a{
+		font-size:12px;
+		color:#333;
+		}
+	.wrapper .nav .nav-t a{
+		color:#ff6598;
+		}	
+	.wrapper .middle{
+		height:574px;
+		
+		}	
+	.wrapper .middle .left{
+		float:left;
+		width:197px;
+		height:572px;
+		border:1px solid #e6e6e6;
+		padding:0 20px;
+		}
+	.wrapper .middle .left .left-t .jingxuan{
+		padding-top:15px;
+		padding-bottom:12px;
+		border-bottom:1px dotted #ccc;
+		}	
+	.wrapper .middle .left .left-t #now-1{
+		border:none;
+		}	
+	.wrapper .middle .left .left-t .jingxuan h3{
+		font-size:14px;
+		line-height:100%;
+		}
+	.wrapper .middle .left .left-t .jingxuan h3 a{
+		color:#fe7d9c;
+		}
+	.wrapper .middle .left .left-t .jingxuan ul li{
+		line-height:100%;
+		float:left;
+		font-size:12px;
+		margin:12px 15px 0 0;
+		}	
+	.wrapper .middle .left .left-t .jingxuan ul .jingxuan-1 a{
+		color:#fe7b9b;
+		}				
+	.wrapper .middle .left .left-t .jingxuan ul .jingxuan-2 a{
+		color:#727272;
+		}	
+	.wrapper .middle .right{
+		float:left;
+		}	
+	.wrapper .middle .right .right-picture{
+		display:block;
+		width:960px;
+		height:420px;
+		background:url(../images/326e8980254e91b82bbe36c1063a_960_420.cg.jpg);
+		}
+	.wrapper .middle .right .right-picture .right-picture-l{
+		float:left;
+		margin-top:184px;
+		}		
+	.wrapper .middle .right .right-picture .right-picture-r{
+		float:right;
+		margin-top:184px;
+		}	
+	.wrapper .middle .right .right-content li{
+		margin:9px 0 0 10px;
+		float:left;
+		}	
+	.wrapper .middle .right .right-content li a{
+		width:182px;
+		height:145px;
+		display:block;
+		background:url(../images/c7735b5cb71711601a1f4650ce29_182_145.cg.jpg) no-repeat;
+		}	
+	.wrapper .liuxing{
+		width:1200px;
+		padding-top:49px;
+		}	
+	.inline{
+		display:inline-block;
+		}	
+	.wrapper .liuxing .header{
+		height:19px;
+		background:#fff;
+		float:left;
+		margin-top:-482px;
+		}	
+	.wrapper .liuxing .header .header-l{
+		line-height:100%;
+		float:left;
+		color:#666;
+		font-size:20px;
+		}	
+	.wrapper .liuxing .header .header-m{
+		line-height:100%;
+		float:left;
+		color:#999;
+		font-size:12px;
+		margin-left:9px;
+		margin-top:7px;
+		}		
+	.wrapper .liuxing .header-r{
+		float:right;
+		width:58px;
+		height:12px;
+		line-height:100%;
+		float:right;
+		font-size:12px;
+		color:#666;
+		background:url(../images/demo3-4.jpg) no-repeat right center;
+		margin-top:-487px;
+		}
+	.wrapper .liuxing .header-r a{
+		color:#666;
+		}	
+	.wrapper .liuxing .bodyer {
+		padding-top:20px;
+		border-top:1px solid #ededed;
+		margin-right:-20px;
+		margin-bottom:67px;
+		}	
+	.wrapper .liuxing .bodyer .bodyer-content{
+		float:left;
+		height:376px;
+		width:386px;
+		margin-right:20px;
+		}
+	.wrapper .liuxing .bodyer .bodyer-l{
+		float:left;
+		}
+	.wrapper .liuxing .bodyer .bodyer-r li{
+		float:left;
+		margin-left:2px;
+		margin-bottom:2px;
+		}	
+	.wrapper .xinkuan{
+		height:265px;
+		}	
+	.wrapper .xinkuan .content{
+		margin-top:-268px;
+		float:left;
+		background:#FFF;
+}	
+	.wrapper .xinkuan .content h3{
+		float:left;
+		font-size:20px;
+		color:#666;
+		line-height:100%;
+		margin-right:9px;
+		}	
+	.wrapper .xinkuan .content span{
+		float:left;
+		font-size:12px;
+		color:#999;
+		line-height:100%;
+		margin-top:7px;
+		}	
+	.wrapper .xinkuan .news{
+		margin-right:-20px;
+		overflow:hidden;
+		height:228px;
+		border-top:1px solid #ededed;
+		padding-top:20px;
+		}	
+	.wrapper .xinkuan .news li{
+		float:left;
+		width:183px;
+		height:183px;
+		margin-right:20px;
+		}
+	.wrapper .haokan{
+		border-top:1px solid #ededed;
+		height:894px;
+		padding-top:20px;
+		}	
+	.wrapper .haokan .haokan-t{
+		margin-right:-20px;
+		overflow:hidden;
+		}		
+	.wrapper .haokan .haokan-t .liebiao{
+		float:left;
+		width:224px;
+		height:394px;
+		margin-right:20px;
+		margin-bottom:42px;
+		}	
+	.wrapper .haokan .haokan-t .liebiao .liebiao1{
+		display:block;
+		margin-bottom:20px;
+		}	
+	.wrapper .haokan .haokan-t .liebiao .haokan-t-b{
+		width:224px;
+		height:23px;
+		}
+	.wrapper .haokan .haokan-t .liebiao .haokan-t-b a{
+		float:left;
+		font-size:17px;
+		color:#ff6699;
+		line-height:100%;
+		}	
+	.wrapper .haokan .haokan-t .liebiao .haokan-t-b span{
+		padding-left:12px;
+		float:right;
+		font-size:12px;
+		color:#969595;
+		line-height:100%;
+		background:url(../images/demo5-3.jpg) no-repeat left center;
+		}
+	.wrapper .haokan .haokan-t .liebiao .haokan-m{
+		float:left;
+		color:#666;
+		font-size:12px;
+		}	
+	.wrapper .haokan .header-r{
+		float:right;
+		width:58px;
+		height:12px;
+		line-height:100%;
+		float:right;
+		font-size:12px;
+		color:#666;
+		background:url(../images/demo3-4.jpg) no-repeat right center;
+		margin-top:-917px;
+		}	
+	.wrapper .haokan .header-r a{
+		color:#666;
+		}	
+	.wrapper .haokan .content{
+		float:left;
+		background:#fff;
+		margin-top:-912px;
+		}	
+	.wrapper .haokan .content h3{
+		float:left;
+		font-size:20px;
+		color:#666;
+		line-height:100%;
+		margin-right:9px;
+		}
+	.wrapper .haokan .content span{
+		float:left;
+		font-size:12px;
+		color:#999;
+		margin-top:7px;
+		line-height:100%;
+		}
+	.wrapper .mingxing{
+		border-top:1px solid #ededed;
+		height:439px;
+		padding-top:20px;
+		}
+	.wrapper .mingxing ul{
+		margin-right:-20px;
+		overflow:hidden;
+		}	
+	.wrapper .mingxing ul li{
+		float:left;
+		width:386px;
+		margin-right:20px;
+		}
+	.wrapper .mingxing ul li .mingxing-t{
+		display:block;
+		margin-bottom:23px;
+		}	
+	.wrapper .mingxing ul li .mingxing-b {
+		height:94px;
+		
+		}			
+	.wrapper .mingxing ul li .mingxing-b .mingxing-b-t{
+		height:18px;
+		font-size:18px;
+		color:#fe65a6;
+		margin-bottom:13px;
+		}	
+	.wrapper .mingxing ul li .mingxing-b .mingxing-b-t span{
+		margin-right:10px;
+		font-size:12px;
+		}	
+	.wrapper .mingxing ul li .mingxing-b .mingxing-b-t del{
+		margin-left:26px;
+		font-size:12px;
+		color:#999;
+		}	
+	.wrapper .mingxing ul li .mingxing-b .mingxing-b-c{
+		height:19px;
+		color:#666;
+		font-size:14px;
+		}	
+	.wrapper .mingxing ul li .mingxing-b .mingxing-b-b{
+		line-height:24px;
+		height:48px;
+		font-size:12px;
+		color:#a1a1a1;
+		}
+	.wrapper .mingxing .header-r{
+		float:right;
+		width:58px;
+		height:12px;
+		line-height:100%;
+		float:right;
+		font-size:12px;
+		color:#666;
+		background:url(../images/demo3-4.jpg) no-repeat right center;
+		margin-top:-417px;
+		}	
+	.wrapper .mingxing .header-r a{
+		color:#666;
+		}	
+	.wrapper .mingxing .content{
+		margin-top:-412px;
+		float:left;
+		background:#fff;
+		}
+	.wrapper .mingxing .content h3{
+		float:left;
+		font-size:20px;
+		color:#666;
+		line-height:100%;
+		margin-right:9px;
+		}
+	.wrapper .mingxing .content span{
+		font-size:12px;
+		color:#999;
+		}	
+	.wrapper .meizhuang{
+		border-top:1px solid #ededed;
+		padding-top:20px;
+		height:592px;
+		}
+	.wrapper .meizhuang ul{
+		margin-right:-20px;
+		overflow:hidden;
+		}	
+	.wrapper .meizhuang ul li{
+		float:left;
+		width:386px;
+		margin-right:20px;
+		}	
+	.wrapper .meizhuang ul li .meizhuang-t{
+		display:block;
+		width:386px;
+		height:386px;
+		margin-bottom:24px;
+		} 	
+	.wrapper .meizhuang ul li .meizhuang-b{
+		height:118px;
+		
+		}	
+	.wrapper .meizhuang ul li .meizhuang-b .meizhuang-top{
+		font-size:18px;
+		color:#ff6fa1;
+		line-height:100%;
+		height:26px;
+		}	
+	.wrapper .meizhuang ul li .meizhuang-b .meizhuang-center{
+		font-size:14px;
+		color:#666;
+		line-height:100%;
+		height:20px;
+		}
+	.wrapper .meizhuang ul li .meizhuang-b .meizhuang-bottom{
+		line-height:23px;
+		font-size:12px;
+		color:#a1a1a1;
+		height:47px;
+		}
+	.wrapper .meizhuang ul li .meizhuang-b .meizhuang-foot {
+		height:19px;
+		padding-left:28px;
+		background:url(../images/demo7-2.jpg) no-repeat left center;
+		}
+	.wrapper .meizhuang ul li .meizhuang-b .meizhuang-foot ul li{
+		float:left;
+		width:25px;
+		line-height:19px;
+		margin-right:11px;
+		color:#ff6699;
+		font-size:12px;
+		}	
+	 .meizhuang-z{
+		margin-top:-630px;
+		float:left;
+		width:1200px;
+		height:20px;
+		line-height:100%;
+		}
+	 .meizhuang-z h3{
+		height:20px;
+		line-height:100%;
+		background:#FFF;
+		font-size:20px;
+		color:#666;
+		float:left;
+		}	
+	 .meizhuang-z h3 span{
+		font-size:12px;
+		font-weight:normal;
+		margin-left:7px;
+		color:#999;
+		}	
+	 .meizhuang-z .mei{
+		font-size:12px;
+		height:12px;
+		color:#666;
+		float:right;
+		width:58px;
+		height:12px;
+		background:url(../images/demo3-4.jpg) no-repeat 48px center;
+		}	
+	.wrapper .tuijian{
+		height:554px;
+		}			
+	.wrapper .tuijian .tuijian-t{
+		display:inline-block;
+		height:20px;
+		width:1200px;
+		line-height:100%;
+		margin-bottom:-4px;
+		}				
+	.wrapper .tuijian .tuijian-t h3{
+		height:20px;
+		line-height:100%;
+		background:#FFF;
+		font-size:20px;
+		color:#666;
+		float:left;
+		}	
+	.wrapper .tuijian .tuijian-t h3 span{
+		font-size:12px;
+		font-weight:normal;
+		margin-left:7px;
+		color:#999;
+	}
+	.wrapper .tuijian .tuijian-t .mei{
+		font-size:12px;
+		height:12px;
+		color:#666;
+		float:right;
+		width:58px;
+		height:12px;
+		background:url(../images/demo3-4.jpg) no-repeat 48px center;
+		}
+	.wrapper .tuijian .tuijian-m{
+		width:1200px;
+		line-height:100%;
+		height:63px;
+		border-top:1px solid #ededed;
+		}	
+	.wrapper .tuijian .tuijian-m ul{
+		margin-right:-43px;
+		padding-left:344px;
+		}	
+	.wrapper .tuijian .tuijian-m ul li{
+		float:left;
+		margin-right:43px;
+		font-size:16px;
+		line-height:63px;
+		}	
+	.wrapper .tuijian .tuijian-m li a{
+		color:#666;
+		}	
+	.wrapper .tuijian .tuijian-m .tuijian-q a{
+		color:#ff6699;
+		text-decoration:underline;
+		}	
+	.wrapper .tuijian .tuijian-b{
+		overflow:hidden;
+		margin-right:-20px;
+		}		
+	.wrapper .tuijian .tuijian-b li{
+		width:386px;
+		float:left;
+		margin-right:20px;
+		}
+	.wrapper .tuijian .tuijian-b li .tuijian-b-l{
+		float:left;
+		margin-right:2px;
+		}
+	.wrapper .tuijian .tuijian-b li .tuijian-b-r{
+		float:left;
+		margin-bottom:-2px;
+		}	
+	.wrapper .tuijian .tuijian-b li .tuijian-b-r img{
+		margin-bottom:2px;
+		}
+	.wrapper .tuijian .tuijian-b li .tuijian-font{
+		font-size:22px;
+		color:#666;
+		line-height:22px;
+		margin-top:20px;
+		text-align:center;
+		margin-bottom:8px;
+		}	
+	.wrapper .tuijian .tuijian-b li .tuijian-ziti{
+		font-size:12px;
+		color:#999;
+		height:25px;
+		}	
+	.wrapper .tuijian .tuijian-b li .tuijian-foot{
+		font-size:12px;
+		color:#747474;
+		height:12px;
+		line-height:100%;
+		text-align:center;
+		}		
+	.wrapper .tuijian .tuijian-b li .tuijian-foot span{
+		color:#ff6699;
+		margin-left:4px;
+		margin-right:22px;
+		}
+	.foot{
+		padding-top:34px;
+		width:100%;
+		margin-top:12px;
+		height:316px;
+		background:#f5f5f5;
+		border-top:1px solid #666;
+		}	
+	.foot .foot-t{
+		width:1200px;
+		height:215px;
+		}	
+	.foot .foot-t .foot-l{
+		float:left;
+		background:url(../images/demo9-1.jpg) no-repeat left top;
+		width:236px;
+		}	
+	.foot .foot-t .foot-l .foot-1{
+		margin-left:48px;
+		font-size:18px;
+		color:#666;
+		line-height:100%;
+		height:18px;
+		margin-bottom:9px;
+		}
+	.foot .foot-t .foot-l .foot-2{
+		font-size:12px;
+		color:#666;
+		margin-left:48px;
+		margin-bottom:12px;
+		}
+	.foot .foot-t .foot-l .foot-3{
+		font-size:12px;
+		color:#666;
+		margin-left:48px;
+		}	
+	.foot .foot-t .foot-m{
+		float:left;
+		width:112px;
+		}	
+	.foot .foot-t .foot-m .foot-1{
+		font-size:16px;
+		color:#666;
+		height:16px;
+		line-height:100%;
+		margin-bottom:12px;
+		}
+	.foot .foot-t .foot-m .foot-2{
+		font-size:12px;
+		color:#666;
+		line-height:100%;
+		height:12px;
+		margin-bottom:14px;
+		}
+		.foot .foot-t .foot-m .foot-3{
+		font-size:12px;
+		color:#666;
+		line-height:16px;
+		height:16px;
+		margin-bottom:14px;
+		padding-left:20px;
+		background:url(../images/demo9-3.jpg) no-repeat left center;
+		}	
+			.foot .foot-t .foot-m .foot-4{
+		font-size:12px;
+		color:#666;
+		line-height:16px;
+		height:16px;
+		margin-bottom:14px;
+		background:url(../images/demo9-4.jpg) no-repeat left center;
+		padding-left:20px;
+		}	
+			.foot .foot-t .foot-m .foot-5{
+		font-size:12px;
+		color:#666;
+		line-height:16px;
+		height:16px;
+		margin-bottom:14px;
+		padding-left:20px;
+		background:url(../images/demo9-5.jpg) no-repeat left center;
+		}	
+	.foot .foot-t .foot-m a{
+		color:#666;
+		}
+	.foot .foot-t .foot-n{
+		float:left;
+		width:200px;
+		}	
+	.foot .foot-t .foot-n .foot-6{
+		font-size:16px;
+		color:#666;
+		height:16px;
+		line-height:100%;
+		margin-bottom:12px;
+		}	
+	.foot .foot-c{
+		height:1200px;
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		height:30px;
+		line-height:30px;
+		font-size:12px;
+		}	
+	.foot .foot-c ul{
+		float:left;
+		}	
+	.foot .foot-c .timo{
+		float:right;
+		font-size:12px;
+		color:#666;		
+		}	
+	.foot .foot-c ul li{
+		float:left;
+		margin-right:8px;
+		}	
+	.foot .foot-c ul li a{
+		color:#666;
+		}	
+	.foot .last{
+		padding-top:9px;
+		height:60px;
+		font-size:12px;
+		color:#666;
+		}	
+	.foot .last p{
+		text-align:center;
+		line-height:25px;
+		}
+		
+</style>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+    	<div class="head">
+    		<ul>
+                <li class="head-one"><a href="#">微信登录</a></li>
+                <li class="head-two"><a href="#">QQ登录</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+                <li class="head-three"><a href="#">我的购物车</a><div></div></li>
+                <li class="head-four"><a href="#">我的订单</a></li>
+                <li class="head-five"><a href="#">美丽说会员</a></li>
+                <li class="head-six"><a href="#">下载APP<div></div></a></li>
+                <li class="head-seven"><a href="#">帮助中心</a></li>
+        	</ul>
+		</div>
+        <div class="top"></div>
+        <div class="nav clearFix">
+        	<ul>
+            	<li class="nav-t"><a href="#">首页</a></li>
+                <li><a href="#">最热</a></li>
+                <li><a href="#">上衣</a></li>
+                <li><a href="#">裙子</a></li>
+                <li><a href="#">裤子</a></li>
+                <li><a href="#">鞋子</a></li>
+                <li><a href="#">包包</a></li>
+                <li><a href="#">配饰</a></li>
+                <li><a href="#">内衣</a></li>
+                <li><a href="#">美妆</a></li>
+                <li><a href="#">男装</a></li>
+                <li><a href="#">童鞋</a></li>
+                <li><a href="#">家居</a></li>
+                <li><a href="#">小家电</a></li>
+                <li><a href="#">食品</a></li>
+            </ul>
+        </div>
+        <div class="middle clearFix">
+        	<div class="left">
+            	<ul class="left-t">
+                	<li class="jingxuan">
+                    	<h3><a href="#">每日精选</a></h3>
+                        <ul class="clearFix">
+                        	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                          	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                        </ul>
+                    </li>
+                    <li class="jingxuan">
+                    	<h3><a href="#">每日精选</a></h3>
+                        <ul class="clearFix">
+                        	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                          	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                        </ul>
+                    </li>
+                    <li class="jingxuan">
+                    	<h3><a href="#">每日精选</a></h3>
+                        <ul class="clearFix">
+                        	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                          	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                        </ul>
+                    </li>
+                    <li class="jingxuan">
+                    	<h3><a href="#">每日精选</a></h3>
+                        <ul class="clearFix">
+                        	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                          	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                        </ul>
+                    </li>
+                    <li class="jingxuan" id="now-1">
+                    	<h3><a href="#">每日精选</a></h3>
+                        <ul class="clearFix">
+                        	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                           	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                          	<li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-2"><a href="#">街头混搭</a></li>
+                            <li class="jingxuan-1"><a href="#">秋冬新品</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+            	<a class="right-picture clearFix" href="#">
+                	<img class="right-picture-l" src="../images/bnr_btn_left1.png" alt=""/>
+                    <img class="right-picture-r" src="../images/bnr_btn_right1.png" alt=""/>
+                </a>
+                <ul class="right-content clearFix">
+                	<li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="liuxing clearFix">
+        	
+            <ul class="bodyer clearFix">
+            	<li class="bodyer-content clearFix">
+                	<a class="bodyer-l" href="#"><img src="../images/923deff0ad5fb27d4314be8a8b45_710_1008.ch.jpg_e7fc1c1c_s0_710_1008.jpg" width="260" alt=""/></a>
+                    <ul class="bodyer-r">
+                    	<li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                        <li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                        <li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                    </ul>
+                </li>
+               	<li class="bodyer-content clearFix">
+                	<a class="bodyer-l" href="#"><img src="../images/923deff0ad5fb27d4314be8a8b45_710_1008.ch.jpg_e7fc1c1c_s0_710_1008.jpg" width="260" alt=""/></a>
+                    <ul class="bodyer-r">
+                    	<li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                        <li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                        <li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                    </ul>
+                </li>
+                <li class="bodyer-content clearFix">
+                	<a class="bodyer-l" href="#"><img src="../images/923deff0ad5fb27d4314be8a8b45_710_1008.ch.jpg_e7fc1c1c_s0_710_1008.jpg" width="260" alt=""/></a>
+                    <ul class="bodyer-r">
+                    	<li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                        <li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                        <li><a href="#"><img src="../images/809a7aaeffceade1f2fbd68ad5e2_334_334.ch.jpg_22f63665_s0_334_334.jpg" width="124" alt=""/></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header clearFix">
+                  <h3 class="header-l">疯狂星期五</h3>
+                  <div class="header-m">正确流行 新款大促</div>
+            </div>
+            <div class="header-r"><a href="#">往期回顾</a></div>
+        </div>
+        <div class="xinkuan">
+            <ul class="news clearFix">
+            	<li><a href="#"><img src="../images/44246af1a3d733978bf351778ddf_342_342.cg.jpg_d7ed22ae_s0_342_342.jpg" width="183px" alt=""/></a></li>
+                <li><a href="#"><img src="../images/44246af1a3d733978bf351778ddf_342_342.cg.jpg_d7ed22ae_s0_342_342.jpg" width="183px" alt=""/></a></li>
+                <li><a href="#"><img src="../images/44246af1a3d733978bf351778ddf_342_342.cg.jpg_d7ed22ae_s0_342_342.jpg" width="183px" alt=""/></a></li>
+                <li><a href="#"><img src="../images/44246af1a3d733978bf351778ddf_342_342.cg.jpg_d7ed22ae_s0_342_342.jpg" width="183px" alt=""/></a></li>
+                <li><a href="#"><img src="../images/44246af1a3d733978bf351778ddf_342_342.cg.jpg_d7ed22ae_s0_342_342.jpg" width="183px" alt=""/></a></li>
+                <li><a href="#"><img src="../images/44246af1a3d733978bf351778ddf_342_342.cg.jpg_d7ed22ae_s0_342_342.jpg" width="183px" alt=""/></a></li>
+            </ul>
+            <div class="content"><h3>疯狂星期五</h3><span>疯狂新款</span></div>
+        </div>
+        <div class="haokan clearFix">
+        	<ul class="haokan-t">
+            	<li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+            </ul>
+            <div class="content"><h3>新品精选</h3><span>尖货来袭 要你好看</span></div>
+            <div class="header-r"><a href="#">往期回顾</a></div>
+        </div>
+        <div class="mingxing clearFix">
+        	<ul class="clearFix">
+         		<li>
+                	<a class="mingxing-t" href="#"><img src="../images/demo6-1.jpg" width="386" alt=""/></a>
+         	   		<a href="#"><div class="mingxing-b">
+                    	<div class="mingxing-b-t"><span>DESIRE价:</span>￥209.10<del>原款价：￥1,650.00</del></div>
+                        <div class="mingxing-b-c">Samantha Thavasa 同款经典锁头包</div>
+                        <div class="mingxing-b-b">【日本的香奈儿】VIVI杂志多个模特秀【日本的香奈儿】VIVI杂志多个模特秀【日本的香奈儿】VIVI杂志多个模特秀</div>
+                    </div>
+                		</a>
+                	</li>
+            <li>
+                	<a class="mingxing-t" href="#"><img src="../images/demo6-1.jpg" width="386" alt=""/></a>
+         	   <a href="#">		<div class="mingxing-b">
+                    	<div class="mingxing-b-t"><span>DESIRE价:</span>￥209.10<del>原款价：￥1,650.00</del></div>
+                        <div class="mingxing-b-c">Samantha Thavasa 同款经典锁头包</div>
+                        <div class="mingxing-b-b">【日本的香奈儿】VIVI杂志多个模特秀【日本的香奈儿】VIVI杂志多个模特秀【日本的香奈儿】VIVI杂志多个模特秀</div>
+                    </div>
+                </a>
+                </li>
+            <li>
+                	<a class="mingxing-t" href="#"><img src="../images/demo6-1.jpg" width="386" alt=""/></a>
+         	   <a href="#">		<div class="mingxing-b">
+                    	<div class="mingxing-b-t"><span>DESIRE价:</span>￥209.10<del>原款价：￥1,650.00</del></div>
+                        <div class="mingxing-b-c">Samantha Thavasa 同款经典锁头包</div>
+                        <div class="mingxing-b-b">【日本的香奈儿】VIVI杂志多个模特秀【日本的香奈儿】VIVI杂志多个模特秀【日本的香奈儿】VIVI杂志多个模特秀</div>
+                    </div>
+                </a>
+                </li>
+            </ul>
+              <div class="content"><h3>Desire 明星同款</h3><span>明星热捧最IN单品</span></div>
+              <div class="header-r"><a href="#">往期回顾</a></div>
+        </div>
+        <div class="meizhuang clearFix">
+        	
+        	<ul class="clearFix">
+            	<li>
+                	<a class="meizhuang-t" href="#">
+                    	<img src="../images/demo7-1.jpg" width="386" alt=""/>
+                    </a>
+                    <a href="#" class="lianjie1"><div class="meizhuang-b">
+                    	<div class="meizhuang-top">￥6.20</div>
+						<div class="meizhuang-center">夜间酵母单包</div>
+                        <div class="meizhuang-bottom">【跳5变郑多燕，也不如吃一袋它】跳5变郑多燕，也不如吃一袋它【跳5变郑多燕，也不如吃一袋它】跳5变郑多燕，也不如吃一袋它</div>
+                    	<div class="meizhuang-foot">
+                        	<ul>
+                            	<li>减肥</li>
+                                <li>排毒</li>
+                                <li>新谷</li>
+                            </ul>
+                        </div>
+                    </div></a>
+                </li>
+                <li>
+                	<a class="meizhuang-t" href="#">
+                    	<img src="../images/demo7-1.jpg" width="386" alt=""/>
+                    </a>
+                    <a href="#" class="lianjie1"><div class="meizhuang-b">
+                    	<div class="meizhuang-top">￥6.20</div>
+						<div class="meizhuang-center">夜间酵母单包</div>
+                        <div class="meizhuang-bottom">【跳5变郑多燕，也不如吃一袋它】跳5变郑多燕，也不如吃一袋它【跳5变郑多燕，也不如吃一袋它】跳5变郑多燕，也不如吃一袋它</div>
+                    	<div class="meizhuang-foot">
+                        	<ul>
+                            	<li>减肥</li>
+                                <li>排毒</li>
+                                <li>新谷</li>
+                            </ul>
+                        </div>
+                    </div></a>
+                </li>
+                <li>
+                	<a class="meizhuang-t" href="#">
+                    	<img src="../images/demo7-1.jpg" width="386" alt=""/>
+                    </a>
+                    <a href="#" class="lianjie1"><div class="meizhuang-b">
+                    	<div class="meizhuang-top">￥6.20</div>
+						<div class="meizhuang-center">夜间酵母单包</div>
+                        <div class="meizhuang-bottom">【跳5变郑多燕，也不如吃一袋它】跳5变郑多燕，也不如吃一袋它【跳5变郑多燕，也不如吃一袋它】跳5变郑多燕，也不如吃一袋它</div>
+                    	<div class="meizhuang-foot">
+                        	<ul>
+                            	<li>减肥</li>
+                                <li>排毒</li>
+                                <li>新谷</li>
+                            </ul>
+                        </div>
+                    </div></a>
+                </li>
+            </ul>
+        </div>
+        <div class="meizhuang-z clearFix">
+        	<h3>
+            时尚美妆
+            	<span>
+                优选品牌 明星爆款
+                </span>
+            </h3>
+            <a class="mei" href="#">更多美妆</a>
+        </div>
+        <div class="tuijian">
+        	<div class="tuijian-t clearFix">
+            	<h3>	
+                	好店推荐
+                    <span>店铺精选 品质保证</span>
+                </h3>
+                <a class="mei" href="#">更多美妆</a>
+            </div>
+            <div class="tuijian-m">
+            	<ul class="clearFix">
+            	<li class="tuijian-q"><a href="#">魅力女装</a></li>
+                <li><a href="#">时尚包包</a></li>
+                <li><a href="#">潮流没鞋</a></li>
+                <li><a href="#">必备小物</a></li>
+                <li><a href="#">精品男装</a></li>
+            </ul>
+            </div>
+            <ul class="tuijian-b clearFix">
+            	<li class="clearFix">
+                    <div class="clearFix">
+                        <a href="#">
+                            <div class="tuijian-b-l">	
+                                <img src="../images/demo8-3.jpg" width="190" alt=""/>
+                            </div>
+                        </a>
+                            <div class="tuijian-b-r">
+                                <a href="#"><img src="../images/demo8-4.jpg" width="194" alt=""/></a>
+                                <a href="#"><img src="../images/demo8-4.jpg" width="194" alt=""/></a>
+                            </div>
+                     </div> 
+                     <a href="#">  
+                            <div class="tuijian-font">宠儿自制－原创女装店</div>    
+                            <div class="tuijian-ziti">宠儿自制 ，自主设计生产，自有工厂，为您提供最优质的商品及服务！</div>
+                            <div class="tuijian-foot">
+                                销量<span>130796</span>评分<span>4.9</span>
+                            </div>
+                     </a>       
+                </li>
+                <li class="clearFix">
+                    <div class="clearFix">
+                        <a href="#">
+                            <div class="tuijian-b-l">	
+                                <img src="../images/demo8-3.jpg" width="190" alt=""/>
+                            </div>
+                        </a>
+                            <div class="tuijian-b-r">
+                                <a href="#"><img src="../images/demo8-4.jpg" width="194" alt=""/></a>
+                                <a href="#"><img src="../images/demo8-4.jpg" width="194" alt=""/></a>
+                            </div>
+                     </div> 
+                     <a href="#">  
+                            <div class="tuijian-font">宠儿自制－原创女装店</div>    
+                            <div class="tuijian-ziti">宠儿自制 ，自主设计生产，自有工厂，为您提供最优质的商品及服务！</div>
+                            <div class="tuijian-foot">
+                                销量<span>130796</span>评分<span>4.9</span>
+                            </div>
+                     </a>       
+                </li>
+                <li class="clearFix">
+                    <div class="clearFix">
+                        <a href="#">
+                            <div class="tuijian-b-l">	
+                                <img src="../images/demo8-3.jpg" width="190" alt=""/>
+                            </div>
+                        </a>
+                            <div class="tuijian-b-r">
+                                <a href="#"><img src="../images/demo8-4.jpg" width="194" alt=""/></a>
+                                <a href="#"><img src="../images/demo8-4.jpg" width="194" alt=""/></a>
+                            </div>
+                     </div> 
+                     <a href="#">  
+                            <div class="tuijian-font">宠儿自制－原创女装店</div>    
+                            <div class="tuijian-ziti">宠儿自制 ，自主设计生产，自有工厂，为您提供最优质的商品及服务！</div>
+                            <div class="tuijian-foot">
+                                销量<span>130796</span>评分<span>4.9</span>
+                            </div>
+                     </a>       
+                </li>
+            </ul>
+        </div>
+        <div class="haokan clearFix">
+        	<ul class="haokan-t">
+            	<li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+                <li class="liebiao">	
+                	<a class="liebiao1" href="#"><img src="../images/demo5-2.jpg" width="224" alt=""/></a>
+                    <div class="haokan-t-b clearFix"><a href="#">￥110.00</a><span>2355</span></div>
+                    <a href="#" class="haokan-m">秋冬蝙蝠袖波浪边短款外套</a>
+                </li>
+            </ul>
+            <div class="content"><h3>新品精选</h3><span>尖货来袭 要你好看</span></div>
+            <div class="header-r"><a href="#">往期回顾</a></div>
+        </div>
+        <div class="foot">
+        	<div class="foot-t">
+                <div class="foot-l">
+                    <div class="foot-1">4000-800-577</div>
+                    <div class="foot-2">美丽说客服热线</div>
+                    <div class="foot-3">周一至周日:08:00-24:00</div>
+                </div>
+                <div class="foot-m">
+                	<h2 class="foot-1"><a href="#">买家帮助</a></h2>
+                    <div class="foot-2"><a href="#">新手指南</a></div>
+                    <div class="foot-2"><a href="#">服务保障</a></div>
+                    <div class="foot-2"><a href="#">帮助中心</a></div>
+                </div>
+               <div class="foot-m">
+                	<h2 class="foot-1"><a href="#">商家帮助</a></h2>
+                    <div class="foot-2"><a href="#">商家入驻</a></div>
+                    <div class="foot-2"><a href="#">商家推出</a></div>
+                    <div class="foot-2"><a href="#">帮助中心</a></div>
+                </div>
+                <div class="foot-m">
+                	<h2 class="foot-1"><a href="#">关于我们</a></h2>
+                    <div class="foot-2"><a href="#">关于美丽说</a></div>
+                    <div class="foot-2"><a href="#">联系我们</a></div>
+                    <div class="foot-2"><a href="#">加入美丽说</a></div>
+                </div>
+                <div class="foot-m">
+                	<h2 class="foot-1"><a href="#">关注我们</a></h2>
+                    <div class="foot-3"><a href="#">新浪微博</a></div>
+                    <div class="foot-4"><a href="#">QQ空间</a></div>
+                    <div class="foot-5"><a href="#">腾讯微博</a></div>
+                </div>
+                <div class="foot-n">
+                	<h2 class="foot-6">美丽说微信公众号</h2>
+                    <img src="../images/demo9-2.jpg" width="115" alt=""/>
+                </div>
+        	</div>
+           		<div class="foot-c clearFix">
+                    <ul class="clearFix">
+                        <li>友情链接：</li>
+                        <li><a href="#">腾讯女性</a></li>
+                        <li><a href="#">列表网</a></li>
+                        <li><a href="#">太平洋女性网</a></li>
+                        <li><a href="#">多宝网</a></li>
+                        <li><a href="#">七丽女性网</a></li>
+                        <li><a href="#">酷我音乐</a></li>
+                        <li><a href="#">LADYMAX时尚网</a></li>
+                        <li><a href="#">保葫芦</a></li>
+                        <li><a href="#">中国品牌服装网</a></li>
+                        <li><a href="#">优美网</a></li>
+                        <li><a href="#">男士时尚</a></li>
+                        <li><a href="#">哈秀时尚网</a></li>
+                    </ul>
+                    <a class="timo" href="#">更多>></a>
+             	</div>
+           <div class="last">
+        		<p>Copyright ©2015 Meilishuo.com  电信与信息服务业务经营许可证100798号 经营性网站备案信息 Copyright ©2015 Meilishuo.com  电信与信息服务业务经营许可证100798号 经营性网站备案信息</p>
+                <p>Copyright ©2015 Meilishuo.com  电信与信息服务业务经营许可证100798号 经营性网站备案信息 Copyright ©2015 Meilishuo.com  电信与信息服务业务经营许可证100798号 经营性网站备案信息</p>
+       	 </div> 
+        </div>
+       
+    </div>
+    
+</body>
+</html>

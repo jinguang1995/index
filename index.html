@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="stylesheets/base.css" rel="stylesheet">
+		<link href="stylesheets/model.css" rel="stylesheet">
+		<link href="stylesheets/swiper-3.3.1.min.css" rel="stylesheet">
+		<script src="javascripts/jquery-1.7.2.js"></script>
+		<script src="javascripts/swiper-3.3.1.min.js"></script>
+		<script src="javascripts/move.js"></script>
+		<script src="javascripts/script.js"></script>
+		<script src="javascripts/jsonp.js"></script>
+		<style>
+			.swiper-container {
+				background: #ccc;
+				text-align: center;
+				line-height: 10px;
+				font-size: 50px;
+			}
+		</style>
+		
+		<script>
+			window.onload = function() {
+				var mySwiper = new Swiper('.swiper-container', {
+					// direction: 'vertical',  上下滑动
+					loop: true, //无缝
+					effect: 'cube',
+					// 如果需要分页器
+					pagination: '.swiper-pagination',
+					autoplay: 2000,
+					// 如果需要前进后退按钮
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev'
+
+					// 如果需要滚动条
+					/* scrollbar: '.swiper-scrollbar'*/
+				});
+				var oV = document.querySelector('.v1');
+				var oPlay = document.querySelector('.play_btn');
+				var oPause = document.querySelector('.pause_btn');
+				oPlay.onclick = function() {
+					oV.play();
+				};
+				oPause.onclick = function() {
+					oV.pause();
+				};
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<!-- 音频播放 -->
+		<audio class="v1" src="Music/午后阳光.mp3" controls="controls" loop="loop" autoplay="autoplay">
+			亲 您的浏览器不支持html5的audio标签
+		</audio>
+		<div class="nav_top">
+
+			<div class="nav_top2">
+				<span>欢迎访问我的个人网站 TEL:18710192548</span>
+
+				<div class="codeBox">我的微信
+					<div class="code" style="background:url(images/wechat.png) no-repeat;background-size:cover"></div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+
+			<a href="javascript:;" class="play_btn"><img src="Music/play.png" width="20px" height="20px" /></a>
+			<a href="javascript:;" class="pause_btn"><img src="Music/stop.png" width="20px" height="20px" /></a>
+			<ul class="nav_right fr">
+				<li style="color:#fff;">
+					<a href="index.html">HOME</a>
+				</li>
+				<li>
+					<a href="subpage/index/index.html">ABOUT ME</a>
+				</li>
+
+				<li>
+					<a href="subpage/index/game.html">GAME</a>
+				</li>
+				<!-- <li><a href="#">模板分享</a></li>-->
+				<li>
+					<a href="subpage/index/indexstudy.html">SHOW</a>
+				</li>
+				<!-- <li><a href="#">留言板</a></li>
+				          <li><a href="#">登陆</a></li> -->
+				<li><a href="subpage/index/todos.html">TODOS</a></li>
+			</ul>
+			<a href="javascript:;" class="pause_btn" style="float:right"><img src="Music/stop.png" width="20px" height="20px" /></a>
+			<a href="javascript:;" class="play_btn" style="float:right"><img src="Music/play.png" width="20px" height="20px" /></a>
+			<span class="slide"></span>
+
+			<div class="head">
+				<img src="images/head.jpg" width="100%" height="100%" />
+				<span>孙 光</span>
+			</div>
+		</div>
+		<!--全屏大图-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="images/screen3.png" /></div>
+				<div class="swiper-slide"><img src="images/screen4.png" /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<!--产品推荐-->
+		<div class="product">
+			<div class="product-content">
+				<div class="product-css3">
+					<p>
+						<span>css3</span> 的一些特效
+					</p>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<a href="subpage\index\作品集\CD盒子\CD盒子.html" target="_blank">
+							<img src="subpage\index\作品集\CD盒子\img/img_01.jpg" />
+						</a>
+						<span><i>CD盒子简易滑动</i></span>
+					</li>
+					<li>
+						<a href="subpage\index\作品集\3D盒子/3D盒子.html" target="_blank">
+							<img src="subpage\index\作品集\3D盒子/1.png" />
+						</a>
+						<span><i>3D盒子模型的旋转</i></span>
+					</li>
+					<li>
+						<a href="subpage\index\作品集\3D图片环绕/3D图片环.html" target="_blank">
+							<img src="subpage\index\作品集\3D图片环绕/1.png" />
+						</a>
+						<span><i>3D图片环</i></span>
+					</li>
+					<li>
+						<a href="subpage\index\作品集\图片效果/爆炸效果.html" target="_blank">
+							<img src="subpage\index\作品集\css图片展示/1.png" />
+						</a>
+						<span><i>图片特效展示</i></span>
+					</li>
+					<li>
+						<a href="subpage\index\作品集\无缝滚动/无缝滚动.html" target="_blank">
+							<img src="subpage\index\作品集\无缝滚动/img/6.jpg" />
+						</a>
+						<span><i>无缝滚动</i></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--个人简介-->
+		<div class="gr">
+			<div class="rw"><img src="images/rw.png" /></div>
+			<p>Hey !!! 怎 么 才 来，等 你 好 久 了。<br/>这 里 有 一 位 正 在 跳 坑 的 web 前 端 工 程 师。</p>
+
+			<div class="grjj">
+				<div class="l">
+					<a href="subpage/index/index.html">个人简介</a>
+					<span></span>
+				</div>
+				<div class="r">
+					<a href="subpage/index/indexstudy.html">项目作品</a>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="db">
+
+		</div>
+
+	</body>
+
+</html>

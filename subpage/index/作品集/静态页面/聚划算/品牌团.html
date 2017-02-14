@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href="base.css" rel="stylesheet"/>
+    <title></title>
+    <style>
+        html{
+            font-size:20px;
+            font-family: "Microsoft YaHei";
+        }
+        .warp{
+            width: 16rem;
+        }
+        header{
+            width: 16rem;
+            height: 2.5rem;
+            background: -webkit-linear-gradient(#f6f6f6,#ededed);
+            line-height:2.5rem;
+        }
+        header a{
+            float:left;
+            width:3.5rem;
+            height:2.5rem;
+            background:url("img4/1.png")  no-repeat 0.25rem 0.5rem;
+            background-size:3.25rem;
+        }
+        header h2{
+            font-size:0.7rem;
+            float:left;
+            margin-left:4.5rem;
+        }
+        section{
+            width: 100%;
+        }
+        section .nav{
+            width: 100%;
+            height:2rem;
+            border-bottom:1px solid #dcdcdc;
+        }
+        .nav li{
+            width: 25%;
+            height:2rem;
+            float:left;
+            line-height: 2rem;
+            text-align:center;
+            font-size:0.5rem;
+            color:#999999;
+            border-right:1px solid #dcdcdc;
+            box-sizing: border-box;
+        }
+        .nav li:last-child{
+            border-right:none;
+        }
+        .nav li a:hover{
+            color:#d51942;
+        }
+        .list{
+            width: 100%;
+            height:18.5rem;
+            background:#ff0;
+            overflow:hidden;
+            border-bottom:1px solid #dcdcdc;
+            position: relative;
+        }
+        .list img{
+            width: 100%;
+            height:47.25rem;
+            position: absolute;
+            top:-13.25rem;
+            left:0;
+        }
+
+    </style>
+    <script>
+        ;(function(win,doc){
+            doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            win.addEventListener('resize',function(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            },false)
+        })(window,document);
+
+    </script>
+</head>
+<body>
+<div class="warp">
+    <header>
+        <a href="主页.html"></a>
+        <h2>品牌团</h2>
+    </header>
+    <section>
+        <ul class="nav">
+            <li><a href="NIKE.html">商品</a></li>
+            <li><a href="杭州生活团.html">生活</a></li>
+            <li><a href="品牌团.html">品牌</a></li>
+            <li><a href="聚宝盆.html">聚宝盆</a></li>
+        </ul>
+        <div class="list">
+            <img src="img4/7.png"/>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

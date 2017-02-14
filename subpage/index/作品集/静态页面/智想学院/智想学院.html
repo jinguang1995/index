@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>智想学院</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<style>
+		body {
+			font-family: '微软雅黑';			
+		}
+		/*导航*/
+		
+		#j-header-navbar a {
+			font-size: 18px;
+			padding: 0 30px;
+			height: 50px;
+			line-height: 50px;
+		}
+		
+		#j-header-navbar a:hover {
+			color: #57c332;
+		}
+		
+		.user span {
+			font-size: 12px;
+			margin-right: 5px;
+		}
+		
+		.header-nav {
+			border-bottom: 3px solid #57c332;
+		}
+		
+		.login {
+			font-size: 12px;
+		}
+		
+		.banner {
+			margin-bottom: 20px;
+			overflow: hidden;
+			max-height: 380px;
+		}
+		
+		.notice {
+			padding: 0 20px 10px;
+			margin-bottom: 20px;
+			border-bottom: 1px dashed rgba(0, 0, 0, 0.102);
+		}
+		
+		.notice a {
+			color: #57c332;
+			text-decoration: none;
+		}
+		
+		.notice span,
+		.notice a {
+			color: #57c332;
+			text-decoration: none;
+		}
+		
+		.carousel-inner>.item>img {
+			width: 100%;
+		}
+		
+		img {
+			vertical-align: middle;
+		}
+		
+		img {
+			border: 0;
+		}
+		
+		.title {
+			border-bottom: 1px solid #52ba24;
+			padding-bottom: 5px;
+			padding-left: 15px;
+		}
+		
+		.title span {
+			font-size: 18px;
+			color: #57c332;
+			margin-right: 10px;
+		}
+		
+		.title a {
+			color: #777;
+			text-decoration: none;
+		}
+		
+		.title a:hover {
+			color: #57c332
+		}
+		
+		.thumbnail:hover {
+			border-color: #57c332;
+		}
+		
+		.course-detail {
+			display: block;
+			text-align: right;
+			color: #57c332;
+		}
+		
+		.end,
+		.end:hover {
+			color: #f00;
+			text-decoration: none;
+		}
+		
+		.start,
+		.start:hover,
+		a:hover {
+			color: #57c332;
+			text-decoration: none;
+		}
+		
+		a {
+			color: #777;
+		}
+		
+		.video .link {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.1);
+			width: 100%;
+			height: 100%;
+		}
+		
+		.start,
+		.start:hover,
+		a:hover {
+			color: #57c332;
+			text-decoration: none;
+		}
+		
+		.video .link span {
+			position: absolute;
+			top: 60px;
+			left: 50%;
+			margin-left: -60px;
+			width: 120px;
+			height: 50px;
+			line-height: 50px;
+			background: #57dd2a;
+			color: #fff;
+			text-align: center;
+			border-radius: 4px;
+		}
+		
+		.video .thumbnail p {
+			color: #57c332;
+		}
+		
+		.thumbnail:hover {
+			border-color: #57c332;
+		}
+		
+		.video .thumbnail:hover .link {
+			display: block;
+		}
+		
+		.video .thumbnail {
+			position: relative;
+		}
+		
+		.footer {
+			padding-top: 10px;
+			background: #f8f8f8;
+			text-align: center;
+		}
+		
+		.footer ul {
+			padding-top: 20px;
+		}
+		
+		.footer li {
+			padding-bottom: 10px;
+		}
+		
+		a {
+			color: #777;
+		}
+		
+		.copyright {
+			margin-top: 10px;
+			text-align: center;
+		}
+		
+		p {
+			margin: 0 0 10px;
+		}
+	</style>
+
+	<body>
+		<!--导航-->
+		<nav class="navbar navbar-default header-nav">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="#">智想学院</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+
+					<ul class="nav navbar-nav" id="j-header-navbar">
+						<li class="active"><a href="#">首页</a></li>
+						<li><a href="#">课程介绍</a></li>
+						<li><a href="#">视频教程</a></li>
+						<li><a href="#">学员作品</a></li>
+						<li><a href="#">关于我们</a></li>
+						<li>
+							<a href="#" class="user"> <span class="glyphicon glyphicon-user login"></span></span>登录</a>
+						</li>
+
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!--通知-->
+		<div class="container">
+			<div class="row">
+				<div class="clearfix notice">
+					<p class="pull-left"><span class="glyphicon glyphicon-volume-down"> </span>本周六晚18：00 petrel 老师整点分享 Bootstrap 栅格化，报名从速！</p>
+					<a href="#" class="pull-right">查看详情</a>
+				</div>
+			</div>
+
+			<!--轮播图-->
+			<div class="row banner">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/images/banner-1.jpg" alt="...">
+							<div class="carousel-caption">
+								...
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/images/banner-2.jpg" alt="...">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/images/banner-3.jpg" alt="...">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!--课程介绍-->
+			<div class="row clearfix">
+				<p class="title">
+					<span>课程介绍</span>
+					<a href="#">更多&gt;</a>
+				</p>
+			</div>
+			<!--课程图片-->
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="img/images/m-54ab9e9fc739f.jpg" alt="...">
+						<div class="caption">
+							<h3>非互动版</h3>
+							<p>会当凌绝顶，一览众山小。宏观高度入手，微观角度实战，加强前后端Web开发技术</p>
+							<a href="#" class="course-detail">课程大纲→</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="img/images/m-547e5c3762e2e.jpg" alt="...">
+						<div class="caption">
+							<h3>互动版</h3>
+							<p>后端业务乃一切产品的核心，深入了解数据库设计、PHP性能，迅速从熟手跨向高手</p>
+							<a href="#" class="course-detail">课程大纲→</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="img/images/m-567a0bca364fa.jpg" alt="...">
+						<div class="caption">
+							<h3>VIP版</h3>
+							<p>分布式存储、分库分表、主从架构，弹笑间，大流量处理技术，条分缕析，轻松掌握</p>
+							<a href="#" class="course-detail">课程大纲→</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--开课通知-->
+			<div class="row clearfix">
+				<p class="title">
+					<span>开课信息</span>
+					<a href="#">更多&gt;</a>
+				</p>
+			</div>
+			<!--开课信息-->
+			<div class="row">
+				<table class="table table-hover text-center class-info">
+					<thead>
+						<tr>
+							<th class="col-md-4 text-center">名称</th>
+							<th class="col-md-4 text-center">开班时间</th>
+							<th class="col-md-2 text-center">状态</th>
+							<th class="col-md-2 text-center">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>【分享课】MySQL负载均衡</td>
+							<td>2016年05月25日 09:00:00日</td>
+							<td>已开班</td>
+							<td>
+								<a href="#" class="end">终止报名</a>
+							</td>
+						</tr>
+						<tr>
+							<td>【周末班】web全站工程师</td>
+							<td>2016年05月25日 09:10:00</td>
+							<td>抢座中</td>
+							<td>
+								<a href="#" class="start">点击咨询</a>
+							</td>
+						</tr>
+						<tr>
+							<td>【周末班】web全站工程师</td>
+							<td>2016年05月25日 09:10:00</td>
+							<td>抢座中</td>
+							<td>
+								<a href="#" class="start">点击咨询</a>
+							</td>
+						</tr>
+						<tr>
+							<td>【周末班】web全站工程师</td>
+							<td>2016年05月25日 09:10:00</td>
+							<td>抢座中</td>
+							<td>
+								<a href="#" class="start">点击咨询</a>
+							</td>
+						</tr>
+						<tr>
+							<td>【脱产班】高级前端就业班</td>
+							<td>2016年05月25日 09:15:00</td>
+							<td>即将开班</td>
+							<td>
+								<a href="#">即将开班</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--视频教程-->
+			<div class="row clearfix">
+				<p class="title">
+					<span>视频教程</span>
+					<a href="#">更多&gt;</a>
+				</p>
+			</div>
+			<div class="row video">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#" class="link">
+							<span>开始学习</span>
+						</a>
+						<img src="img/images/m-54ab9e9fc739f.jpg" alt="...">
+						<div class="caption">
+							<h3>正则表达式基础</h3>
+							<p class="clearfix">
+								<span class="pull-left">初级</span>
+
+								<span class="pull-right text-muted">800人看过</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#" class="link">
+							<span>开始学习</span>
+						</a>
+						<img src="img/images/m-54ab9e9fc739f.jpg" alt="...">
+						<div class="caption">
+							<h3>正则表达式基础</h3>
+							<p class="clearfix">
+								<span class="pull-left">初级</span>
+
+								<span class="pull-right ">800人看过</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#" class="link">
+							<span>开始学习</span>
+						</a>
+						<img src="img/images/m-54ab9e9fc739f.jpg" alt="...">
+						<div class="caption">
+							<h3>正则表达式基础</h3>
+							<p class="clearfix">
+								<span class="pull-left">初级</span>
+
+								<span class="pull-right ">800人看过</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail">
+						<a href="#" class="link">
+							<span>开始学习</span>
+						</a>
+						<img src="img/images/m-54ab9e9fc739f.jpg" alt="...">
+						<div class="caption">
+							<h3>正则表达式基础</h3>
+							<p class="clearfix">
+								<span class="pull-left">初级</span>
+
+								<span class="pull-right ">800人看过</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!--合作单位-->
+			<div class="row clearfix">
+				<p class="title">
+					<span>合作单位</span>
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy18.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy16.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy10.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy13.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy09.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy01.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy02.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy11.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy07.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy04.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy12.jpg" />
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6">
+					<img src="img/images/qy03.jpg" />
+				</div>
+
+			</div>
+
+		</div>
+		<!--导航end-->
+		<footer class="footer">
+			<div class="contaiter">
+				<div class="row">
+					<ul class="list-unstyled col-md-3 hidden-xs hidden-sm">
+						<li>
+							<a href="#">学习资料</a>
+						</li>
+						<li>
+							<a href="#">就业简报</a>
+						</li>
+						<li>
+							<a href="#">学员作品</a>
+						</li>
+					</ul>
+					<ul class="list-unstyled col-md-3 col-xs-6">
+						<li>
+							<a href="#">招贤纳士</a>
+						</li>
+						<li>
+							<a href="#">联系电话：123456</a>
+						</li>
+						<li>
+							<a href="#">交流群</a>
+						</li>
+					</ul>
+					<ul class="list-unstyled col-md-3 col-xs-6">
+						<li>
+							<a href="#">咨询QQ：123123</a>
+						</li>
+						<li>
+							<a href="#">报名方式</a>
+						</li>
+						<li>
+							<a href="#">支付流程</a>
+						</li>
+					</ul>
+					<div class="col-md-3 col-xs-12 col-sm-12">
+						<img src="img/images/er.jpg" />
+					</div>
+				</div>
+				<p class="copyright">Copyright 北京智享学院教育咨询有限公司 2015-2020 京ICP备123123213号</p>
+			</div>
+		</footer>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="jquery/jquery-1.12.3.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>

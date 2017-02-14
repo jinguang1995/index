@@ -1,0 +1,251 @@
+html{
+    font-size:20px;
+}
+.wrap{
+    width: 16rem;
+}
+.wrap header{
+    width: 16rem;
+    height:2.5rem;
+    background:-webkit-linear-gradient(#fff,#ebebeb);
+    position:relative;
+    text-align:center;
+}
+header a{
+    position:absolute;
+    width: 3.25rem;
+    height:1.6rem;
+    background:url("img/1.png") no-repeat;
+    background-size: 100%;
+    top:0.55rem;
+    left:0.55rem;
+    text-indent:-999em;
+}
+header img{
+    width:9.4rem;
+    height:2.2rem ;
+    margin-top:0.2rem;
+}
+.ban{
+    overflow: hidden;
+}
+.ban ul{
+    width: 112rem;
+    height:6.7rem;
+    -webkit-transform: translate3d(0,0,0);
+}
+.ban ul li{
+    float:left;
+    width:16rem;
+    height:6.7rem;
+    background:url("img/3.png") no-repeat;
+    background-size:100%;
+}
+.ban ol{
+    overflow: hidden;
+    margin-top:0.5rem;
+    margin-left:6.75rem;
+}
+.ban ol li{
+    width:0.25rem;
+    height:0.25rem;
+    background:#a9a9a9;
+    float:left;
+    border-radius: 50%;
+    margin:0 0.125rem;
+    text-indent:-999px;
+}
+.ban ol li.active{
+    background:#ff4300;
+}
+.list ul{
+    margin-top:2rem;
+    height:10rem;
+}
+.list ul li{
+    float:left;
+    width: 4rem;
+    height: 4rem;
+    text-align:center;
+    margin-bottom:1rem;
+    color:#999999;
+
+}
+.list ul li img{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom:0.5rem;
+}
+.list ul li a{
+    display: block;
+    text-align:center;
+    margin-bottom:1rem;
+    color:#999999;
+}
+.hot div{
+    font-weight:bold;
+    padding:0.5rem 0;
+    height:1rem;
+    width: 15rem;
+    margin:0 0.5rem;
+    border-bottom:0.1rem solid #dcdcdc;
+    margin-bottom:0.75rem;
+}
+.hot div .p1{
+    border-left:0.1rem solid #d51938;
+    padding-left:0.45rem;
+}
+.sp{
+    width: 15rem;
+    margin:0 0.5rem;
+    height:35rem;
+}
+.sp li{
+    height:3rem;
+    margin-bottom:0.5rem;
+}
+.sp .num{
+    font-size:1.2rem;
+    height :3rem;
+    width:1.5rem ;
+    text-align:center;
+    line-height:3rem;
+    font-weight:bold;
+    color:#fff;
+}
+
+.sp img{
+    width: 4.5rem;
+    height:3rem;
+}
+.sp .con1{
+    width: 5.35rem;
+    height:1.5rem;
+    background:#f4f4f4;
+    color:#999999;
+    font-size:0.75rem;
+    padding:0.75rem 0.5rem;
+}
+.sp .con1 span{
+    display:block;
+}
+.sp .con1 span i{
+    text-decoration: line-through;
+    font-style:normal;
+}
+.sp .con2{
+    width: 2.65rem;
+    height:3rem;
+    background:#f4f4f4;
+    line-height:3rem;
+
+}
+.sp .con2 .a1{
+    color:#d51938;
+}
+.sp .con2 .a2{
+    color:#ccc;
+    font-weight:bold;
+}
+.jhs{
+    width: 15rem;
+    margin:0 auto;
+    height: 2em;
+    background:#f5f5f5;
+    text-align: center;
+    line-height:2rem;
+    color:#666666;
+    font-weight:bold;
+    margin-bottom:0.75rem;
+}
+.life{
+    width: 15rem;
+    height:8.75rem;
+    margin:0.5rem auto;
+}
+.life img{
+    width: 3.75rem;
+    height:8.75rem;
+    float:left;
+}
+.life .xbt{
+    float:right;
+    width:11.25rem ;
+    height:8.75rem;
+    border-top:1px solid #eee ;
+    box-sizing:border-box;
+    margin-bottom:0.5rem;
+}
+.life .xbt li{
+    box-sizing:border-box;
+    float:left;
+    width: 3.75rem;
+    height:2.2rem  ;
+    border-bottom:1px solid #eee;
+    border-right:1px solid #eee;
+    font-size:0.65rem;
+    text-align:center;
+    line-height:2.2rem;
+    color:#999999;
+}
+.life .xbt li:hover{
+    color:#f00;
+}
+.khd{
+    width: 15rem;
+    margin:0.5rem auto;
+    height:4rem;
+    border:1px solid #dcdcdc;
+}
+.khd li{
+    box-sizing:border-box;
+    height:4rem;
+    width: 5rem;
+    font-size:0.5rem;
+    color:#999999;
+    float:left;
+    border-right:1px solid #dcdcdc;
+    text-align: center;
+}
+.khd li img{
+    height:0.75rem;
+    width: 0.75rem;
+    margin:0.75rem 0;
+}
+.khd li:last-child{
+    border-right:none;
+}
+.login{
+    width: 16rem;
+    height:2.2rem;
+    background:#f8f8f8;
+    overflow: hidden;
+    line-height:2.2rem;
+    font-size:0.5rem;
+}
+.login p{
+    width: 2rem;
+    margin-left:0.75rem;
+}
+.login p:last-child{
+   background:url("img/28.png") no-repeat right center;
+    background-size:0.6rem;
+}
+footer{
+    font-size:0.5rem;
+    width: 16rem;
+    height:8.55rem;
+    background:#eeeeee;
+    text-align: center;
+    background:url("img/29.png" ) no-repeat center 3.75rem;
+    background-size:13rem;
+    color:#aeaeae;
+
+}
+footer .p1{
+    font-weight: bold;
+    color:#000;
+    font-size:0.75rem;
+    margin-top:1rem;
+    margin-bottom:0.75rem;
+}
