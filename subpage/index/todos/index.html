@@ -41,7 +41,7 @@
       <footer class="footer" ng-show="todos.length">
         <!-- This should be `0 items left` by default -->
         <span class="todo-count"><strong>{{todos.length}}</strong> item left</span>
-        <!-- Remove this if you don't implement routing -->
+       
         <ul class="filters">
           <li>
             <a ng-class="{selected:selector.completed == undefined}" href="#/">All</a>
@@ -53,7 +53,7 @@
             <a ng-class="{selected:selector.completed == true}" href="#/completed">Completed</a>
           </li>
         </ul>
-        <!-- Hidden if no completed items are left ↓ -->
+        
         <button class="clear-completed" ng-click="clear()" ng-show="existCompleted()">Clear completed</button>
       </footer>
     </section>

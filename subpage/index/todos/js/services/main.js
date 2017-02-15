@@ -1,9 +1,3 @@
-/*
- * @Author: iceStone
- * @Date:   2016-02-16 17:01:17
- * @Last Modified by:   iceStone
- * @Last Modified time: 2016-02-16 17:52:08
- */
 
 (function(angular) {
 

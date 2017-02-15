@@ -1,10 +1,3 @@
-/*
- * @Author: iceStone
- * @Date:   2016-02-16 16:54:35
- * @Last Modified by:   iceStone
- * @Last Modified time: 2016-02-16 17:52:19
- */
-
 (function(angular) {
   'use strict';
 
